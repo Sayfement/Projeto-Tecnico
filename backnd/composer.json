@@ -1,0 +1,18 @@
+{
+    "name": "aluno/projeto",
+    "description": "Projeto do SENAI",
+    "authors": [
+        {
+            "name": "Yan Broetto",
+            "email": "ybroetto@Hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./src/Model",
+            "Controller\\": "./src/Controller",
+            "Persistence\\": "./src/Persistence",
+            "API\\": "./src/API"
+        }
+    }
+}

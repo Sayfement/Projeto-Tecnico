@@ -1,0 +1,310 @@
+body {
+    padding-top: 0px;
+    background-color: #393960;
+  }
+  
+/*navbar*/
+
+
+nav {
+  background:  rgb(32, 37, 67) ;
+}
+
+.btn-primary#cc {
+  position: absolute;
+  background-color: #444969;
+  border-color: #444969 ;
+  padding: 6px 17px 6px 17px ;
+  right: 300px;
+}
+.btn-primary#fc {
+  position: absolute;
+  background-color: #444969;
+  border-color: #444969 ;
+  padding: 6px 17px 6px 17px ;
+  right: 100px;
+}
+
+button.btnTeste {
+  background: black;
+  position: absolute;
+  top: 100px;
+  width: 50px;
+}
+
+
+/* Conteudo da Pagna */
+
+
+/*SEÇÃO DE LOGIN COM IMAGEM DO APP*/
+
+
+.lgn{
+  position: absolute;
+  width: 330px;
+  height: 390px;
+  left: 70px;
+  top: 200px;
+  background-color: #0f102e;
+  border-radius: 50px;
+}
+
+.login {
+  position : relative;
+  left:600px;  
+}
+
+  section.Login1{
+  background: rgb(32, 37, 67); 
+  height: 650px;
+  }
+
+  section.Login1 img#phoneImg {
+  position: absolute;
+  width: 203px;
+  height: 369px;
+  left: 902px;
+  top: 180px;
+  }
+
+  section.Login1 div#lojas img#ios {
+  position: absolute;
+  width: 133px;
+  height: 39px;
+  left: 856px;
+  top: 557px;   
+  }
+
+  section.Login1 div#lojas img#googleplay {
+  position: absolute;
+  width: 133px;
+  height: 39px;
+  left: 1012px;
+  top: 557px;
+  }
+
+  section.Login1 div.lgn form input {
+  position: absolute; 
+  background:#0f102e ;
+  left: 30px;
+  width: 269px;
+  height: 50px;
+  border: 0;
+
+  }
+
+  section.Login1 div.lgn form input#nome {
+    top: 45px;
+    color: white;
+  }
+
+  section.Login1 div.lgn form input#senha {
+  top: 130px;
+  color: white;
+}
+  
+  section.Login1 div.lgn form a {
+  position: absolute;
+  top: 215px;
+  left: 165px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  }
+
+  section.Login1 div.lgn form  button#enter{
+  position: absolute;
+  width: 270px;
+  height: 48px;
+  left: 30px ;
+  top: 238px;
+  background: rgb(32, 37, 67);
+  color: white;
+  padding: 13px;
+  }
+
+  section.Login1 div.lgn form  a#cc-btn{
+  position: absolute;
+  width: 270px;
+  height: 48px;
+  top: 294px;
+  left: 30px;
+  background: rgb(32, 37, 67);
+  color: white;
+  padding: 13px;
+  }
+  
+
+  /*COMO FUNCIONA*/
+
+
+  section.comoFunciona {
+    background-color: rgb(32, 37, 67) ;
+    height: 760px;
+  }
+
+  section.comoFunciona p {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  }
+
+  section.comoFunciona p#p1{
+  position: relative;
+  top: 190px;
+  color: #FFFFFF;
+}
+
+section.comoFunciona p#p2{
+  position: relative;
+  top: 350px;    
+}
+
+section.comoFunciona p#p3{
+  position: relative;
+  top: 481px;    
+}
+
+  section.comoFunciona .circle1{
+  position: absolute;
+  top: 808px;
+  border-radius:100%;
+  width:100px;
+  height:100px;
+  background-color:#C4C4C4;
+  left:620px;
+}
+
+section.comoFunciona .circle2{
+  position: absolute;
+  top: 1003px;
+  border-radius:100%;
+  width:100px;
+  height:100px;
+  background-color:#C4C4C4;
+  left:620px;
+}
+
+section.comoFunciona .circle3{
+  position: absolute;
+  top: 1210px;
+  border-radius:100%;
+  width:100px;
+  height:100px;
+  background-color:#C4C4C4;
+  left:620px;
+}
+
+
+/*
+  SEÇÃO DAS REDES SOCIAIS
+*/
+
+
+  section.share {
+    background: #393960;
+    height: 550px;
+  }
+
+  section.share:hover img{
+    cursor: pointer;
+    
+  }
+
+  section.share img#facebook {
+    position: relative;
+    top: 60px;     
+  }
+  section.share img#insta {
+  position: relative;    
+  top: 60px;
+}
+
+  section.share img#tt {
+  position: relative;    
+  top: 60px;
+}
+
+section.share img#gP {
+  position: relative;    
+  top: 200px;
+}
+
+
+/*
+  SEÇÃO DE CONTATOS
+*/
+
+
+  section.fale {
+    background: #202543;
+    height: 700px;
+  }
+
+  section.fale ul {
+    list-style-type: none;
+  }
+
+  section.fale a {
+  color: #FFFFFF;
+  font-size: 27px;
+  }
+
+  section.fale a#Email {
+  position:relative;
+  top: 125px ;
+  }
+
+  section.fale a#tel {
+  position: relative;;
+  top: 125px;
+}
+
+section.fale a#zap {
+  position:relative;
+  top: 225px;
+}
+
+section.fale a#direitos {
+  position:relative;
+  top: 225px;
+}
+
+section.fale a#redesSociais {
+  position:relative;
+  top: 350px;
+}
+
+/*
+  RODAPE
+*/
+
+  footer#rodape {
+    background: #393960;
+    height: 140px;
+  }
+
+  footer ul#up {
+    position: relative;
+    top: 10px;
+  }
+
+  footer ul#down {
+    position: relative;
+    top: 15px;
+  }
+
+  footer div#copy {
+    position: relative;
+    top: 25px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}

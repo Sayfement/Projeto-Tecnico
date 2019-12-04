@@ -1,0 +1,19 @@
+1 quadrado grande, se divide em 4 quadrados
+Cada um desses 4 quadrados terá 8 espaços para colocar uma cor
+11 cores para 8 quadrados, pode se repetir: 43758 possibilidades
+
+Cada quadrado, quando analisado o padrão das 8 cores, deverá formar um texto de 5 caracteres.
+18 caracteres (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, g, h) para selecionar apenas 5 (pode repetir): 26334 possibilidades
+
+Ao final, será concatenado os 5 números dos quadrados, e teremos um único texto de 20 caracteres.
+
+Ex:
+Quadrado 1: b654a
+Quadrado 2: 45fe4
+Quadrado 3: 64j8h
+Quadrado 4: 6hc78
+
+Resultado: b654a45fe464j8h6hc78
+O resultado representará o id de um usuário.
+
+O total de possibilidades que podemos gerar com esse id é 15.905.368.710

@@ -1,0 +1,176 @@
+Este documento explica o uso das API's do Sayfement.
+
+Padrão de resposta: {"result": "RESULTADO", "aditional": "ADICIONAL"}
+    Onde:
+        result: Resultado da ação
+            Respostas:
+                OK -> Ação concluida com sucesso
+                ERROR -> Ação não concluida
+        aditional: Qualquer resposta adicional que seja necessário enviar
+
+Autenticação - API para login, registro, etc.
+    Login
+        API: http://localhost:8000/authentication/login.php
+        aditional:
+			OK -> token de acesso do usuário
+			ERROR -> é informado o campo que está incorreto
+        JSON para enviar: {"email": "ybroetto@hotmail.com", "password": "senha"}
+        Onde:
+            email: Email do usuário
+            password: Senha do usuário
+    Registro
+        API: http://localhost:8000/authentication/register.php
+        aditional:
+			OK -> token de acesso do usuário
+			ERROR -> é informado o campo que está incorreto
+        JSON para enviar: {
+		 "email": "ybroetto@hotmail.com",
+         "password": "senha",
+		 "nome": "Yan Broetto",
+         "tipo_conta": "0",
+         "telefone": "", 
+         "celular": "27998853178", 
+         "endereco": "Avenida Brasil, 123", 
+         "complemento": "Edificio 127",
+		 "cep": "43242334"		 
+         "cpf":"1111111", 
+         "rg": "1111111", 
+         "cnpj": ""
+		 }
+        Onde:
+            email: Email do usuário
+            password: Senha do usuário    
+            tipo_conta: Tipo de conta do usuário
+            telefone: Telefone do usuário
+            celular: Celular do usuário
+            endereco: Endereço do usuário
+            complemento: Complemento do endereço do usuário
+            cpf: CPF do usuário
+            rg: RG do usuário
+            CNPJ: CNPJ do usuário
+
+Moeda - API para controle de saldo
+    Transferir
+        API: http://localhost:8000/moeda/transferir.php
+        aditional:
+            OK -> informa o status da transferencia
+            ERROR -> é informado o erro
+        JSON para enviar: {
+            "email_from": "ybroetto@hotmail.com",
+            "email_to": "sayfement@sayfement.com",
+            "value": "35.52",
+            "token": "4djfjalkjgfshla46728763v"
+            }
+        Onde:
+            email_from: Email do usuário que está enviando
+            email_to: Email do usuário que vai receber    
+            value: Valor da transferencia
+            token: Token de acesso do usuário que irá enviar
+    Alterar Moeda
+        API: http://localhost:8000/moeda/converter.php
+        aditional:
+            OK -> é informado novo saldo do usuário
+            ERROR -> é informado o erro
+        JSON para enviar: {
+            "email": "ybroetto@hotmail.com",
+            "moeda": "Euro"
+            "token": "4djfjalkjgfshla46728763v"
+            }
+        Onde:
+            email: Email do usuário
+            Moeda: Nova moeda do usuário
+            token: Token de acesso do usuário que irá enviar
+Profile - API para perfil do usuário
+    Load
+        API: http://localhost:8000/profile/load.php
+        aditional:
+            OK -> É enviado um json com todos os dados necessários do usuário
+            ERROR -> é informado o erro
+        JSON para enviar: {
+            "email": "ybroetto@hotmail.com",
+            "token": "4djfjalkjgfshla46728763v"
+            }
+        Onde:
+            email: Email do usuário
+            token: Token de acesso do usuário
+    View
+        API: http://localhost:8000/profile/view.php
+        aditional:
+            OK -> É enviado um json com todos os dados necessários do usuário
+            ERROR -> é informado o erro
+        JSON para enviar: {
+            "email": "ybroetto@hotmail.com",
+            }
+        Onde:
+            email: Email do usuário
+    Historico
+        API: http://localhost:8000/profile/historico.php
+        aditional:
+            OK -> É enviado um json com todos o histórico de transferencias do usuário
+            ERROR -> é informado o erro
+        JSON para enviar: {
+            "email": "ybroetto@hotmail.com",
+            "token": "4djfjalkjgfshla46728763v"
+            }
+        Onde:
+            email: Email do usuário
+            token: Token de acesso do usuário
+
+Legenda
+    Autenticação
+        tipo_conta:
+            0 = pessoal
+            1 = comercial
+Legendas de siglas
+	Autenticação
+		Registro
+			IEM = Email inválido
+			EAE = Email já cadastrado
+			ETS = Email muito curto
+			ETL = Email muito longo
+			PTS = Senha muito curta
+			PTL = Senha muito longa
+			IPW = Senha inválida
+			NTS = Nome muito curto
+			NTL = Nome muito longo
+			ITC = Tipo de conta inválido
+			ITL = Telefone inválido
+			ICL = Celular invalido
+			ETL = Endereço muito longo
+			ENTS = Endereço muito curto
+			CTL = Complemento muito longo
+			CTS = Complemento muito curto
+			CETL = CEP muito longo
+			CETS = CEP muito curto
+			IRG = RG inválido
+			ICN = CNPJ inválido
+			ICP = CPF inválido
+			CAE = CPF já cadastrado
+			CNAE = CNPJ já cadastrado
+        Login
+            ENC = Email não cadastrado
+            IPW = Email ou senha incorretos
+            IEM = Email inválido
+			ETS = Email muito curto
+			ETL = Email muito longo
+			PTS = Senha muito curta
+			PTL = Senha muito longa
+			IPW = Senha inválida
+    Moeda
+        Transferencia
+            EFNC = Email (de quem tentou enviar) não cadastrado
+            ETNC = Email (de quem iria receber) não cadastrado
+            ITK = Token inválido (envie para a pagina de login)
+            IEM = Email inválido
+            ETS = Email muito curto
+            ETL = Email muito longo
+            IVA = Quantidade inválida
+            VTS = O minimo para transferir é 3 (independente da moeda)
+        Alterar Moeda
+            IEM = Email inválido
+            ETS = Email muito curto
+            ETL = Email muito longo
+            ENC = Email não cadastrado
+            ITK = Token inválido (envie para a pagina de login)
+            IMO = Moeda inválida
+            

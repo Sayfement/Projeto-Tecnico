@@ -1,0 +1,175 @@
+
+body{
+    background: #fff;
+    
+}
+
+div.conteudo {
+    background-color: #202543;
+
+    
+}
+
+nav { /*barra do cabeçalho*/
+    background-color: #393960;
+    
+    
+    /*background:transparent; transparente*/ 
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+    
+    }
+.navbar-toggler.toggler-example {
+cursor: pointer;
+
+
+
+}
+
+.footer{
+    padding: 5.1rem 0 3.5rem;
+    
+    text-align: cen;
+    background-color: #202543;
+    
+}
+
+ul {/*nomes que ficam no menu*/
+    line-height: 1.2;
+    
+}
+.row{/*cor dos nomes-- meios de pag*/
+    color: #fff; /*quase a mesma cor da barra*/
+    
+    
+
+
+}
+/*COISAS QUE NÃO SAO A NAV*/
+.card{ /*os cardes(colunas)*/
+    background-color: rgb(47, 49, 82);
+    margin: 50px;
+
+    
+    
+}
+/*eu chamei os CARDS-- e desse modo q se chama no css*/
+div#card1{
+    position: relative;
+    left: 5px;
+
+    
+    
+}
+div#card2{
+    position: relative;
+    left: 5px;
+
+}
+div#card3{
+    position: relative;
+    left: 5px;
+
+    
+}
+div#cad4{
+    position: relative;
+    left: 5px;
+
+}
+
+.btnMargin{
+    margin: 5px 5px 5px 5px;
+}
+
+ul.list_credit-cards li{ /*dos cartoes*/
+    display: block;
+    position: relative;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    list-style-type: none;
+    right: 20px ;
+    
+}
+
+.footer_subtitle.footer_subtitle--spacer-1{ /*nome: colunas*/
+    margin-bottom: 2.9rem;
+    color: #FFF;
+    /**font-weight: 300;*/
+    margin: 1px 6px 28px;
+    display: flex;
+    justify-content: center;
+}
+/*cor do interna dos cards do desenvolvedor*/
+.list-group-item{
+    background-color:rgb(47, 49, 82);
+}
+hr{/*deixa uma lista na tela, melhor q nave bar k k k */
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    height: 15px;
+}
+.jumbotron{
+    margin-bottom: 0;
+}
+/*modal, cores das letras*/
+.modal-title{
+    color: #fff;
+ }
+.modal-body{
+    color: #fff;
+
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+  
+.tablink:hover {
+    background-color: #777;
+}
+
+/*CARTÃO VISA*/
+#TituloModalCentralizado{
+    color: #000000;
+
+   }
+   .modal-body{
+       color: #202543;
+}
+/*#sitemodal2{
+    background-color: cornflowerblue;
+}*/
+
+/*estatisticas*/
+.my-4{/*margem */
+    margin-bottom: 1.5rem!important;
+    margin-top: 1.5rem!important;
+}
+.w-100{
+    width: 100%!important;
+}
+
+/*
+.button.btn.btn-lihgt.center{
+    
+    border-block:0;
+}*/
+
+
+
+
